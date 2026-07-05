@@ -1,3 +1,4 @@
+# VERSION A
 # My New Project (Conflict Testr Version)
 This project is for practicing Git.
 ## Features
