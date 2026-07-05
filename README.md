@@ -1,4 +1,4 @@
-# My New Project
+# My New Project (Master Version)
 This project is for practicing Git.
 ## Features
 - Fast
