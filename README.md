@@ -6,3 +6,4 @@ This project is for practicing Git.
 ## Features
 - Fast
 - Simple
+Master moved forward
