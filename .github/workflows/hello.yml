@@ -1,0 +1,22 @@
+name: Hello World Pipeline
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Say hello
+        run: echo "Hello, this pipeline ran because you pushed to master!"
+
+      - name: List files in repo
+        run: ls -la
+
+      - name: Show README content
+        run: cat README.md
+
