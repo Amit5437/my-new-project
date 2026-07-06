@@ -14,8 +14,13 @@ jobs:
       - name: Say hello
         run: echo "Hello, this pipeline ran because you pushed to master!"
 
-      - name: List files in repo
-        run: ls -la
+      - name: check required files exist
+        run: |
+          if [ ! -f README.md ]; then
+            echo "ERROR: README.md is missing!"
+            exit 1
+          fi
+            echo "README.md found."
 
       - name: Show README content
         run: cat README.md
